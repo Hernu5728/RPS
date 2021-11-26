@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        
+        
+       // Computer picks rock,paper,scissors
+     function computerPick() {
+           return Math.floor(Math.random()*3) +1;
+        };
+    
+        let computer= computerPick();
+        if (computer == 1) {
+            computer='rock';
+        } else if (computer == 2) {
+            computer='paper';
+        } else if (computer == 3) {
+            computer = 'scissors';
+        };
+
+        console.log(computer);
+
+        let player= prompt('Pick between rock , paper and scissors to play against the computer.')
+        function lowerCase(){
+            return player.toLowerCase();
+        }
+        player= lowerCase();
+        
+
+        if (player == computer){
+            alert(`Computer also picked ${computer} This round is a tie!`);
+        }else if (player == 'scissors' && computer == 'rock' ){
+            alert('You lose this round!, computer picked rock and rock beats scissors!');
+        }else if (player == 'scissors' && computer == 'paper' ){
+            alert('You win this round!, computer picked paper , scissors beats paper!');
+        }else if (player == 'rock' && computer == 'paper' ) {
+            alert('You lose this round!, computer picked paper ,  paper beats rock!');
+        }else if (player == 'rock' && computer == 'scissors') {
+            alert('You win this round!, computeer picked scissors ,rock beats scissors!')
+        }else if (player == 'paper' && computer == 'scissors') {
+            alert('You lose this round!, computer picked scissors , scissors beat paper!')
+        }else if (player == 'paper' && computer == 'rock') {
+            alert('You win this round!,computer picked rock , paper beats rock !')
+        };
+    
+
+
+
+        
+       
+
+        
+        
+    
+        
+        
+
+        
+
+       
+        
+        
+        
+
+        
+       
+            
+        
+        
+        
+
+       
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+    
+</body>
+</html>
