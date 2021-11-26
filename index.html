@@ -27,7 +27,7 @@
 
         //Player pick
 
-        let player= prompt('Pick between rock , paper and scissors to play against the computer.')
+        let player= prompt('Pick between rock , paper or scissors to play against the computer.')
         function lowerCase(){
             return player.toLowerCase();
         }
@@ -44,12 +44,14 @@
         }else if (player == 'rock' && computer == 'paper' ) {
             alert('You lose this round!, computer picked paper ,  paper beats rock!');
         }else if (player == 'rock' && computer == 'scissors') {
-            alert('You win this round!, computeer picked scissors ,rock beats scissors!')
+            alert('You win this round!, computeer picked scissors ,rock beats scissors!');
         }else if (player == 'paper' && computer == 'scissors') {
-            alert('You lose this round!, computer picked scissors , scissors beat paper!')
+            alert('You lose this round!, computer picked scissors , scissors beat paper!');
         }else if (player == 'paper' && computer == 'rock') {
-            alert('You win this round!,computer picked rock , paper beats rock !')
-        };
+            alert('You win this round!,computer picked rock , paper beats rock !');
+        }else if (player !== 'rock' || 'scissors' || 'paper') {
+            alert('Wrong game for that buddy , try again!');
+        }
     
 
     </script>
